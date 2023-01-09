@@ -1,0 +1,26 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: admin-order
+  profiles:
+    active: dev
+  ## spring boot admin
+#  boot:
+#    admin:
+#      client:
+#        api-path:
+#        url: http://192.168.31.78:8000
+#        instance:
+#          prefer-ip: true
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#    enabled-by-default: true
+#  endpoint:
+#    health:
+#      show-details: ALWAYS
+#    logfile:
+#      external-file: D:/project/admin-server/logs/boot-${spring.application.name}.log

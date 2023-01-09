@@ -1,0 +1,26 @@
+spring:
+  application:
+    ## 注册服务名
+    name: admin-order
+  ## spring boot admin
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:8000
+
+
+server:
+  port: 8100
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    enabled-by-default: true
+  endpoint:
+    health:
+      show-details: ALWAYS
+    # 日志记录
+    logfile:
+      external-file: D:\\project\\admin-order\\logs\\boot-${spring.application.name}.log
